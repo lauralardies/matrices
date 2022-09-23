@@ -32,7 +32,7 @@ print(lista(0, 10))
 print(lista(-10, 0))
 print(pares(0, 20))
 print(impares(-20, 0))
-print(multiplo(0, 50, 5))
+print(multiplo(0, 50))
 
 print("-----------------------------------------------")
 print("----------------- EJERCICIO 4 -----------------")

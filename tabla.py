@@ -6,7 +6,7 @@ def main(n, m):
         print("Nuestra script necesita que se introduzcan dos números, el primero que indica el número de filas de nuestra tabla y el segundo el número de columnas.")
         exit()
 
-    for i in range(n-1):
-        print("*", end='')
-        for j in range(m-1):
+    for i in range(n):
+        print()
+        for j in range(m):
             print("*", end='')

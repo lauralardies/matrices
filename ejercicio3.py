@@ -7,5 +7,5 @@ def pares(incio, fin):
 def impares(inicio, fin):
     return list(range(inicio + 1, fin + 1, 2))
 
-def multiplo(inicio, fin, n):
-    return [i for i in range(len(lista(inicio, fin))) if i%n == 0]
+def multiplo(inicio, fin):
+    return list(range(inicio, fin + 1, 5))
