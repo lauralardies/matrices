@@ -1,8 +1,4 @@
 def suma(matriz):
-    for j in matriz:
-        del j[-1]
-    for n in matriz:
-        s = sum(n)
-        if s != matriz[n][-1]:
-            matriz[n][-1] = s
+    for n in range(0, len(matriz)):
+        matriz[n][-1] = sum(matriz[n][:-1])
     return matriz

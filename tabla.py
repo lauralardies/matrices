@@ -7,6 +7,6 @@ def main(n, m):
         exit()
 
     for i in range(n-1):
-        print("*", end='\n')
+        print("*", end='')
         for j in range(m-1):
             print("*", end='')
