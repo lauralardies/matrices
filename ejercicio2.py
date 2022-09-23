@@ -1,8 +1,8 @@
-def longitud(str):
-	contador = 0
-	for i in str:
-		contador += 1
-	return contador
+def longitud(str) :
+    if str == '':
+        return 0
+    else :
+        return 1 + longitud(str[1:])
 
 def condicion(str):
     if longitud(str) >= 3 and longitud(str) < 10:
