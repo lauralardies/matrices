@@ -1,6 +1,6 @@
 from ejercicio1 import suma
 from ejercicio2 import condicion
-from ejercicio3 import lista, pares, impares, multiplo
+from ejercicio3 import lista_recursiva
 from tabla import main
 
 print("-----------------------------------------------")
@@ -28,11 +28,11 @@ print("-----------------------------------------------")
 print("----------------- EJERCICIO 3 -----------------")
 print("-----------------------------------------------")
 
-print(lista(0, 10))
-print(lista(-10, 0))
-print(pares(0, 20))
-print(impares(-20, 0))
-print(multiplo(0, 50))
+print(lista_recursiva(0, 10, 1, 1))
+print(lista_recursiva(-10, 0, 1, 1))
+print(lista_recursiva(0, 20, 1, 2))
+print(lista_recursiva(-19, 0, 1, 2))
+print(lista_recursiva(0, 50, 1, 5))
 
 print("-----------------------------------------------")
 print("----------------- EJERCICIO 4 -----------------")

@@ -1,11 +1,9 @@
-def lista(inicio, fin):
-    return list(range(inicio, fin + 1))
-
-def pares(incio, fin):
-    return list(range(incio, fin + 1, 2))
-
-def impares(inicio, fin):
-    return list(range(inicio + 1, fin + 1, 2))
-
-def multiplo(inicio, fin):
-    return list(range(inicio, fin + 1, 5))
+def lista_recursiva (inicio, fin, n_saltos, l_saltos):
+    l = list(range(inicio, n_saltos*l_saltos, l_saltos))
+    if l[-1] >= fin:
+        if l[-1] > fin:
+            l.pop(-1)
+        return l
+    else:
+        l = lista_recursiva(inicio, fin, n_saltos+1, l_saltos)
+    return l
