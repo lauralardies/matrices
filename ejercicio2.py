@@ -6,6 +6,6 @@ def longitud(str):
 
 def condicion(str):
     if longitud(str) >= 3 and longitud(str) < 10:
-        print("El texto introducido por el usuario tiene longitud mayor o igual que tres y es menor que 10.")
+        return True
     else:
-        print("El texto introducido por el usuario NO tiene longitud mayor o igual que tres ni es menor que 10.")
+        return False
