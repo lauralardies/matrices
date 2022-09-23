@@ -22,7 +22,7 @@ print("-----------------------------------------------")
 
 str = input("Introduce la cadena que usted quiera: ")
 
-condicion(str)
+print(condicion(str))
 
 print("-----------------------------------------------")
 print("----------------- EJERCICIO 3 -----------------")
