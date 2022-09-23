@@ -1,3 +1,7 @@
+# -----------------------------------------------
+# ----------------- EJERCICIO 1 -----------------
+# -----------------------------------------------
+
 matriz = [
     [1, 1, 1, 3],
     [2, 2, 2, 7],
@@ -16,7 +20,11 @@ def suma(matriz):
     
 #print(suma(matriz))
 
-str = input("Introduce la cadena que usted quiera: ")
+# -----------------------------------------------
+# ----------------- EJERCICIO 2 -----------------
+# -----------------------------------------------
+
+#str = input("Introduce la cadena que usted quiera: ")
 
 def longitud(str):
 	contador = 0
@@ -30,4 +38,27 @@ def condicion(str):
     else:
         print("El texto introducido por el usuario NO tiene longitud mayor o igual que tres ni es menor que 10.")
 
-condicion(str)
+#condicion(str)
+
+# -----------------------------------------------
+# ----------------- EJERCICIO 3 -----------------
+# -----------------------------------------------
+
+def lista(inicio, fin):
+    return list(range(inicio, fin + 1))
+
+def pares(incio, fin):
+    return list(range(incio, fin + 1, 2))
+
+def impares(inicio, fin):
+    return list(range(inicio + 1, fin + 1, 2))
+
+def multiplo(valor, lista):
+    return [*range(valor, len(lista)*valor+1, valor)]
+
+
+print(lista(0, 10))
+print(lista(-10, 0))
+print(pares(0, 20))
+print(impares(-20, 0))
+print(multiplo(5, lista(0, 50)))
