@@ -53,12 +53,12 @@ def pares(incio, fin):
 def impares(inicio, fin):
     return list(range(inicio + 1, fin + 1, 2))
 
-def multiplo(valor, lista):
-    return [*range(valor, len(lista)*valor+1, valor)]
+def multiplo(inicio, fin, n):
+    return [i for i in range(len(lista(inicio, fin))) if i%n == 0]
 
 
 print(lista(0, 10))
 print(lista(-10, 0))
 print(pares(0, 20))
 print(impares(-20, 0))
-print(multiplo(5, lista(0, 50)))
+print(multiplo(0, 50, 5))
