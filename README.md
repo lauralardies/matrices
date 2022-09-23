@@ -48,6 +48,18 @@ Utilizando la función range() y la conversión a listas genera las siguientes l
 
 ·        Todos los números múltiples de 5 del 0 al 50 [0, 5, 10, ..., 50]
 
+```
+def lista_recursiva (inicio, fin, n_saltos, l_saltos):
+    l = list(range(inicio, n_saltos*l_saltos, l_saltos))
+    if l[-1] >= fin:
+        if l[-1] > fin:
+            l.pop(-1)
+        return l
+    else:
+        l = lista_recursiva(inicio, fin, n_saltos+1, l_saltos)
+    return l
+```
+
 ## Ejercicio 4
 
 Crea un script llamado tabla.py que realice las siguientes tareas:
@@ -116,11 +128,11 @@ print("-----------------------------------------------")
 print("----------------- EJERCICIO 3 -----------------")
 print("-----------------------------------------------")
 
-print(lista(0, 10))
-print(lista(-10, 0))
-print(pares(0, 20))
-print(impares(-20, 0))
-print(multiplo(0, 50))
+print(lista_recursiva(0, 10, 1, 1))
+print(lista_recursiva(-10, 0, 1, 1))
+print(lista_recursiva(0, 20, 1, 2))
+print(lista_recursiva(-19, 0, 1, 2))
+print(lista_recursiva(0, 50, 1, 5))
 
 print("-----------------------------------------------")
 print("----------------- EJERCICIO 4 -----------------")
