@@ -14,10 +14,10 @@ matriz = [
     [4, 4, 4, 13]
 ]
 
-print(suma(matriz))
+#print(suma(matriz))
 
 print("-----------------------------------------------")
-print("----------------- EJERCICIO 4 -----------------")
+print("----------------- EJERCICIO 2 -----------------")
 print("-----------------------------------------------")
 
 str = input("Introduce la cadena que usted quiera: ")
